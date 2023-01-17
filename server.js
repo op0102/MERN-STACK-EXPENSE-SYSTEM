@@ -30,6 +30,9 @@ app.use("/api/v1/transactions",require("./routes/transactionRoutes"))
 // app.get("*", function (req, res) {
 //   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 // });
+app.get("/", (req, res) => {
+    res.send("Hi! I am Omprakash Live")
+});
 
 
 const start = async () => {
